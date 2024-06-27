@@ -35,7 +35,7 @@ from bs4 import BeautifulSoup as soup
 import requests
 import json
 
-downloads_directory = r'/Users/tanmay/Downloads/Grocery Stores//'
+downloads_directory = r'/Users/shruti/Downloads/Grocery Stores//'
 
 wait_time = 3
 #   gmaps = googlemaps.Client(key='') #Enter the Google Maps API client key here
@@ -113,7 +113,7 @@ def top_cities(size=5000, file_location = r'/Users/tanmay/Downloads/Grocery Stor
 
     return cities_list[0:size]
 
-def states_data(df_states_loc = r'/Users/tanmay/Downloads/Grocery Stores/50_us_states_all_data.csv'):
+def states_data(df_states_loc = r'/Users/shruti/Downloads/Grocery Stores/50_us_states_all_data.csv'):
     '''
     I obtained the list of all US states from this URL - https://scottontechnology.com/list-of-50-us-states-in-excel/
     Returns a Python dictionary of all states and their abbreviations.
@@ -123,7 +123,7 @@ def states_data(df_states_loc = r'/Users/tanmay/Downloads/Grocery Stores/50_us_s
     states_dict = dict(zip(df_states['State'], df_states['Abbr']))
     return states_dict
 
-def zipcode_df(source_directory = r'/Users/tanmay/Downloads/Grocery Stores/zipcode_database.csv', omit=-1):
+def zipcode_df(source_directory = r'/Users/shruti/Downloads/Grocery Stores/zipcode_database.csv', omit=-1):
     '''
     I obtained the list of all zipcodes in the US from this URL - https://github.com/EqualPayChallengeHeinz/equalpay_webapp/blob/master/zipcode_database.csv.
     

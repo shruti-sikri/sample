@@ -91,7 +91,7 @@ def bs4_page(url, wait_time = 1, downloads_directory=downloads_directory):
 
     return page_soup
 
-def top_cities(size=5000, file_location = r'/Users/tanmay/Downloads/Grocery Stores/Top5000Population.xls', space_char="%20", top=500):
+def top_cities(size=5000, file_location = r'/Users/shruti/Downloads/Grocery Stores/Top5000Population.xls', space_char="%20", top=500):
     '''
     I obtained a ranked list of top 5000 cities by population in the US from this URL - http://img.ezlocal.com/data/Top5000Population.xls.
     This function returns the list of specified top cities in a form that is desired by the user.
